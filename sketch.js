@@ -89,7 +89,7 @@ function draw() {
   
     trex.collide(invisibleGround);
     spawnClouds();
-    spawnObstacles();
+    spawnObstacles0();
   
     if(obstaclesGroup.isTouching(trex)){
         gameState = END;
@@ -143,7 +143,7 @@ function spawnClouds() {
   
 }
 
-function spawnObstacles() {
+function spawnObstacles0() {
   if(frameCount % 60 === 0) {
     var obstacle = createSprite(600,165,10,40);
     //obstacle.debug = true;
